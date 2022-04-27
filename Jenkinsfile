@@ -15,5 +15,10 @@ pipeline {
                 sh 'echo "Hola Amigo"'
             }
         }
+        stage('Build_continue_git') {
+            steps {
+                sh 'echo "Que Paso"'
+            }
+        }
     }
 }
