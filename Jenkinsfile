@@ -20,5 +20,10 @@ pipeline {
                 sh 'echo "Que Paso"'
             }
         }
+        stage('Build_continue_git') {
+            steps {
+                sh 'uname -a && hostname -I'
+            }
+        }
     }
 }
