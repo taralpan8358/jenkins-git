@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'echo "Hello Worl"'
+                sh 'echo "Hello World"'
                 sh '''
                     echo "Multiline shell steps works too"
                     ls -lah
@@ -23,6 +23,11 @@ pipeline {
         stage('System commands') {
             steps {
                 sh 'uname -a && hostname -I && date'
+            }
+        }
+        stage('More commands') {
+            steps {
+                sh 'pwd'
             }
         }
     }
